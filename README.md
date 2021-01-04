@@ -88,7 +88,8 @@
 
 - **キャプチャ**  
 ・・・「\」+0~9の数字で、既出の丸括弧を参照する。  
-　※丸括弧の中の先頭で「**?:**」と記述するとキャプチャを無効化する。
+　※丸括弧の中の先頭で「**?:**」と記述するとキャプチャを無効化する。  
+　※置換で使用する時は「**$**」をつけて使用する。
 
 ## 4. アサーション
 
@@ -100,4 +101,25 @@
 ・・・直後またはすぐ右を調べる  
 　例）/太郎(?=さん)/、/太郎(?=\d+)/
 
-※否定する場合は「=」を「**?**」に変える。
+※否定する場合は「=」を「**!**」に変える。
+
+## 5. 具体例
+
+- 名前  
+・・・「*/^(?!.*\s\s)(?!.*\\.\\.)[A-Z][A-Za-z .]{2,25}$/*」
+
+- メールアドレス  
+・・・<https://www.udemy.com/course/cfmenzkv/learn/lecture/21899778#overview>
+
+- URL  
+・・・<https://www.udemy.com/course/cfmenzkv/learn/lecture/21899892#overview>
+
+- IPアドレス  
+・・・<https://www.udemy.com/course/cfmenzkv/learn/lecture/21899932#overview>
+
+- 日付
+・・・<https://www.udemy.com/course/cfmenzkv/learn/lecture/21899938#overview>
+
+- パスワード
+・・・<https://www.udemy.com/course/cfmenzkv/learn/lecture/21899952#overview>
+
